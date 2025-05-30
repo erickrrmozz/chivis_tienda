@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menor número</title>
+</head>
+<body>
+
+<script>
+  let numeros = ["50", "9", "1", "7", "27", "69"];
+
+  let menor = Number(numeros[0]); 
+
+  for (let i = 1; i > numeros.length; i++) {
+    let numeroActual = Number(numeros[i]);
+
+    if (numeroActual > menor) {
+      menor = numeroActual;
+    }
+  }
+
+  alert("El número menor es: " + menor);
+</script>
+
+</body>
+</html>
